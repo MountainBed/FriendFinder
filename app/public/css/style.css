@@ -4,7 +4,7 @@
 }
 
 html {
-  background-color: grey;
+  background-color: #808080;
 }
 
 p {
@@ -19,32 +19,22 @@ body {
 
 main {
   flex: 1 0 auto;
+  color: white;
 }
 
 #id-logo {
   border: 1px solid black;
 }
 
-
 .button-collapse {
   color: #26a69a;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-.parallax-container .section {
+.section {
   width: 100%;
 }
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
   #index-banner .section {
     top: 10%;
   }
