@@ -37,13 +37,21 @@ $(document).ready(function () {
         scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val()],
         totalScore: 0
       };
+      var currentURL = window.location.origin;
 
       for (var i = 0; i < newFriend.scores.length; i++) {
         newFriend.scores[i] = parseInt(newFriend.scores[i]);
         newFriend.totalScore += newFriend.scores[i];
       }
 
-      $("#modal1").modal("open");
+      newFriend.totalscore = parseInt(newFriend.toatlscore);
+
+      $.post(currentURL + "/api/friends", newFriend,
+        function (friendData) {
+          $("#friend-name").text(friendData.name);
+          $("#friend-photo").attr("src", friendData.image);
+          $("#modal1").modal("open");
+        });
     } else {
       alert("Check that each question is answered and that a valid URL was provided for the image location.");
     }
