@@ -1,5 +1,5 @@
 var friendsData = [{
-  name: "Donald Trump",
+  name: "President Donald Trump",
   image: "http://media.breitbart.com/media/2015/12/483208412-real-estate-tycoon-donald-trump-flashes-the-thumbs-up.jpg.CROP_.promo-xlarge2.jpg",
   scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
   totalScore: 10

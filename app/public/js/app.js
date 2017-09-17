@@ -44,7 +44,7 @@ $(document).ready(function () {
         newFriend.totalScore += newFriend.scores[i];
       }
 
-      newFriend.totalscore = parseInt(newFriend.toatlscore);
+      newFriend.totalScore = parseInt(newFriend.totalScore);
 
       $.post(currentURL + "/api/friends", newFriend,
         function (friendData) {
